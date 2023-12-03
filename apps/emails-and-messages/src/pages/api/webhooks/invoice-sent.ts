@@ -90,7 +90,7 @@ const handler: NextWebhookApiHandler<InvoiceSentWebhookPayloadFragment> = async 
     channel,
     client,
     event: "INVOICE_SENT",
-    payload: { order: payload.order },
+    payload: { order: payload.order, invoice: payload.invoice },
     recipientEmail,
   });
 
